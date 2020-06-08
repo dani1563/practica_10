@@ -1,13 +1,9 @@
-"""
-For para listas
-"""
+#For para listas
 def forlist():
-    for x in [1, 2, 3, 4, 5]:
+    for x in [1, 2, 3, 6, 5]:
         print(x)
 
-"""
-For para rangos
-"""
+#For para rangos
 def forrange():
     for x in range(5):
         print(x)
@@ -21,13 +17,11 @@ def forrange():
     for i in range(5, 0, -1):
         print(i)
 
-"""
-For para diccionarios
-"""
+#For para diccionarios
 def fordic():
-    diccionario = {'manzana': 1, 'pera':3, 'uva':10}
+    diccionario = {'manzana':1, 'pera':3, 'uva':10}
     for clave, valor in diccionario.items():
-        print(clave," - ",valor)
+        print(clave," = ",valor)
 
     for clave in diccionario.keys():
         print(clave)
@@ -37,11 +31,8 @@ def fordic():
 
     for idx, x in enumerate(diccionario):
         print("El indice {} del elemento {}".format(idx, x))
-
-"""
-Else de for
-"""
-
+    
+#Else de for
 def elsefor():
     for x in range(5):
         print(x)
@@ -57,12 +48,19 @@ def elsefor2():
     else:
         print("la cuenta se termino")
 
-"""
-En else for 2
-Se rompio el ciclo y no entra al else
-"""
+
+#En else for 2
+#Se rompio el ciclo y no entra al else
+
 #calcular el factorial
 
 if __name__ == "__main__":
     forlist()
+    print()
     forrange()
+    print()
+    fordic()
+    print()
+    elsefor()
+    print()
+    elsefor2()
