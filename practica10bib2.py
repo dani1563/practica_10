@@ -5,3 +5,4 @@
 import math as ma
 
 x= ma.cos(ma.pi)
+print(x)
